@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+}
+body{
+    height:100%;
+}
+
+
+#tags {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 200%;
+    background-color: aliceblue;
+    color: #6091d3;/*文字色*/
+    z-index: 2;
+
+}
+
+#box {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 15%;
+    background-color: aliceblue;
+    color: #6091d3;/*文字色*/
+    border: solid 3px black;/*線*/
+    z-index: 2;
+
+    
+
+}
+#box p{
+    font-size: 600%;
+    
+}
+
+
+
+
+#roop {
+    width: 100%;
+    height: 100%;
+    background: url(../img/oseroback.jpg) repeat/*repeat-x*/;
+    background-position: 0 0;
+    -webkit-animation: bgroop 20s linear infinite;
+    animation: bgroop 100s linear infinite;
+    z-index: 1;
+    position: relative;
+}
+@-webkit-keyframes bgroop {
+    from {
+        background-position: 0  0;
+    }
+    to {
+        background-position: -1956px 0;
+    }
+}
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1956px 0;
+    }
+}
+

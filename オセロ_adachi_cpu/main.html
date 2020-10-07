@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body  background="img/oseroback.jpg">
+		<script type="text/javascript" src="js/othello_x.js"></script>
+		<script type="text/javascript" src="js/cpu.js"></script>
+		<div style="display:none">
+			<div id="cell" class = "square"><div class="td"></div></div>
+			<div id="orange" class="square"><div class="tb"><font color="#ffaa00">●</font></div></div>
+			<div id="green" class="square"><div class="tb"><font color="#00ff00">●</font></div></div>
+			<div id="red" class="square"><div class="tb"><font color="#ff0000">●</font></div></div>
+			<div id="blue" class="square"><div class="tb"><font color="#0000ff">●</font></div></div>
+			<div id="white" class="square"><div class="tw"><font color="#ffffff">●</font></div></div>
+			</div>
+		
+		<!--枚数の表示-->
+		<div id="board"></div>
+		<div id="box1" >
+			<p>あなた</p>
+			<div id="myColor1"><div id="orangeC"></div></div> 
+			<div id="myColor2"><div id="redC"></div></div>
+			<div id="nowpoint1">
+				<div id="nowO">オレンジ(×5点):</div>
+				<div id="nowR">レッド(×2点):</div>
+				<div id="nowD1">枚数の差分(×-5点):</div>
+
+				<div id="nowT1">Total:</div>
+			</div>
+			
+		</div>
+		<div id="box1choice">
+			<p>色選択</p>
+			<input class="buttonO" type="button" value="O" onclick="choiceC(this)" />
+			<input class="buttonR" type="button" value="R" onclick="choiceC(this)" />
+			<div id='targetO'></div>
+			<div id='targetR'></div>
+		</div>
+		<div id="box2" >
+			<p>あいて</p>
+			<div id="enColor1"><div id="blueC"></div></div>
+			<div id="enColor2"><div id="greenC"></div></div>
+			<div id="nowpoint2">
+				<div id="nowB">ブルー(×5点):</div>
+				<div id="nowG">グリーン(×2点):</div>
+				<div id="nowD2">差分(×-5点):</div>
+				<div id="nowT2">Total:</div>
+			</div>
+			
+		</div>
+		<div id="box2choice">
+			<p>色選択</p>
+			<input class="buttonB" type="button" value="B" onclick="choiceC(this)" />
+			<input class="buttonG" type="button" value="G" onclick="choiceC(this)" />
+			<div id="targetB"></div>
+			<div id="targetG"></div>
+		</div>
+		<div id="result" class="result" >
+		    <p>ボタンをクリックしてください</p>
+		    <button id="ok">OK</button>
+		    </div>
+		
+	</body>
+</html>

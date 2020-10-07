@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/result.js"></script>
+    
+  </head>
+  
+  <body>
+	<div>
+		<p id="printresult">defult</p>
+	</div>
+	<script>printResult()</script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/result.css">
+    <script type="text/javascript" src="js/result.js"></script>
+	</head>
+	<body  background="img/oseroback.jpg">
+    
+		
+		<!--枚数の表示-->
+		<div id="board"></div>
+		<div id="box1" >
+			<p>あなた</p>
+			<div id="nowpoint1">
+				<div id="nowO">オレンジ(×5点):</div>
+				<div id="nowR">レッド(×2点):</div>
+				<div id="nowD1">枚数の差分(×-5点):</div>
+
+				<div id="nowT1">Total:</div>
+			</div>
+			
+		</div>
+		<div id="box1choice">
+			<p>結果</p>
+			<div id="result1"></div>
+			
+    </div>
+    
+		<div id="box2" >
+			<p>あいて</p>
+			<div id="nowpoint2">
+				<div id="nowB">ブルー(×5点):</div>
+				<div id="nowG">グリーン(×2点):</div>
+				<div id="nowD2">差分(×-5点):</div>
+				<div id="nowT2">Total:</div>
+			</div>
+			
+		</div>
+		<div id="box2choice">
+			<p>結果</p>
+			<div id="result2"></div>
+			
+		</div>
+		
+		<script>printResult()</script>	
+	</body>
+</html>
